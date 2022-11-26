@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "backend/*": ["src/backend/*"]
+    },
+    "skipLibCheck": true,
+    "target": "esnext",
+    "module": "commonjs",
+    "jsx": "react",
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true
+  },
+  "plugins": [
+    {
+      "transform": "typescript-transform-paths"
+    }
+  ],
+  "include": ["src"],
+  "exclude": [".cache", "dist", "node_modules"]
+}

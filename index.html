@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Rubix Solver</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+
+      position: relative;
+
+      background-color: bisque;
+    }
+
+    #root > div {
+      width: 20px;
+      height: 20px;
+      left: 100px;
+      top: 160px;
+      z-index: 2;
+
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 600;
+
+      border-radius: 5px;
+      color: rgb(33, 33, 33);
+      transition: 0.5s;
+    }
+
+    #root .border {
+      width: 60px;
+      height: 60px;
+      z-index: 1;
+
+      background: rgb(33, 33, 33);
+      outline: 3px solid rgb(33, 33, 33);
+    }
+  </style>
+  <body>
+    <div id="root"></div>
+    <script src="src/index.ts"></script>
+  </body>
+</html>
